@@ -90,7 +90,7 @@ void send_queue() {
     for (int n = key_queue.size(), i = 0; i < n; ++i) {
         auto &k = key_queue[i];
         if (k.code == KEY_F23) {
-            k.code = KEY_RIGHTCTRL;
+            k.code = KEY_RIGHTMETA;
             if (k.value) {
                 if (i >= 1) {
                     auto &a = key_queue[i - 1];
